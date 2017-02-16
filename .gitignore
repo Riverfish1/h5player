@@ -1,0 +1,10 @@
+npm-debug.log
+node_modules
+coverage
+.idea
+*.bak
+resource
+test
+H_EV_XK_DEV4.js
+webviewv02.html
+

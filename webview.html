@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no">
+    <title>EXAMPLE</title>
+</head>
+<body>
+<link rel="stylesheet" href="player.normal.rem.css">
+<script type="text/javascript" src="http://static.hongshiyun.net/player/h5/js/jquery-2.1.4.min.js"
+        charset="utf-8"></script>
+<script type="text/javascript" src="http://static.hongshiyun.net/player/h5/js/md5.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://static.hongshiyun.net/player/h5/v0.0.1/public.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://static.hongshiyun.net/player/h5/js/touch-0.2.14.min.js" charset="utf-8"></script>
+<!--<script type="text/javascript" src="http://static.hongshiyun.net/player/h5/v0.0.3/H_EV_XK_DEV.js" charset="utf-8"></script>-->
+<script type="text/javascript" src="H_EV_XK_DEV3.js" charset="utf-8"></script>
+
+<style>
+  /*#shiftVideo{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*z-index: -1;*/
+    /*!*display: none;*!*/
+    /*!*background-color: red;*!*/
+  /*}*/
+</style>
+<div style="height:9.6rem; min-height: 260px; max-height: 700px; width: 100%; position: absolute; top: 0; left: 0;">
+    <div id="PLAYERID"></div>
+</div>
+<!--<div id="test" style="margin-top: 10rem;border: 1px solid; width: 100%; height: 6rem;"></div>-->
+<!--<div id="test1" style="margin-top: 10rem;border: 1px solid; width: 100%; height: 6rem; overflow: auto"></div>-->
+<script type="text/javascript">
+    var player = new HONGSHIYUN().embed(
+            "PLAYERID",
+            {
+                //视频地址
+//              src: "http://y7spbpf9.vod2.hongshiyun.com/target/mp4/2016/04/26/216_521da0e1543b44678666160f88f410f6_30_480x320.mp4",
+//                src: "http://p2191m9e.vod1.hongshiyun.net/archive/ugc/7fb38df5e59e460e87371ab426b18e41/index.m3u8",
+//                src: "http://fnmm6ksw.vod2.hongshiyun.net/archive/event/f11b5d89728f465bbdf396e4782d3330/e2621280b03641278aa39cfd684220b8/20161001053534/e2621280b03641278aa39cfd684220b8-1.m3u8",
+//                src: "http://fnmm6ksw.vod2.hongshiyun.net/archive/event/f11b5d89728f465bbdf396e4782d3330/e2621280b03641278aa39cfd684220b8/20161001053534/e2621280b03641278aa39cfd684220b8.m3u8",
+       //       src:'http://fnmm6ksw.vod2.hongshiyun.net/archive/hls/20160921/index.m3u8',
+//                src:'http://fnmm6ksw.vod2.hongshiyun.net/archive/hls/20160921/1.m3u8',
+                rateSrc: {
+                    default: 'http://ujyvz9cm.vod2.stg.hongshiyun.net/target/mp4/2016/11/02/10270_083415e1f61849138bbe4543d921dbf7_10_1280x720.mp4',
+                    '0.8': 'http://ujyvz9cm.vod2.stg.hongshiyun.net/target/mp4/2016/11/02/0.8/10270_aa06058a738a4e76b0bdfa5f89cf7bb2_10_1280x720.mp4',
+                    '1.0': 'http://ujyvz9cm.vod2.stg.hongshiyun.net/target/mp4/2016/11/02/10270_083415e1f61849138bbe4543d921dbf7_10_1280x720.mp4',
+                    '1.8': 'http://ujyvz9cm.vod2.stg.hongshiyun.net/target/mp4/2016/11/02/1.6/10270_59e9299f3e2846d68002b22271b21209_10_1280x720.mp4'
+//                    default: 'http://p2191m9e.vod2.hongshiyun.net/target/hls/2016/11/01/191_d929d335ce5b4d6bb4346d93c18f00fb_30_480x320.m3u8',
+//                    '0.8': 'http://p2191m9e.vod2.hongshiyun.net/target/hls/2016/11/01/0.8/191_804efcf94c104930b41282538899000b_10_1280x720.m3u8',
+//                    '1.0': 'http://p2191m9e.vod2.hongshiyun.net/target/hls/2016/11/01/191_d929d335ce5b4d6bb4346d93c18f00fb_30_480x320.m3u8',
+//                    '1.4': 'http://p2191m9e.vod2.hongshiyun.net/target/hls/2016/11/01/1.4/191_1ebf7bfa586b4e2092ca3ba261effcf8_10_1280x720.m3u8',
+//                    '1.8': 'http://p2191m9e.vod2.hongshiyun.net/target/hls/2016/11/01/1.6/191_3f8d7808f66840ad81093e640d4529f0_10_1280x720.m3u8'
+                },
+                eventCallback: onJavaScriptBridgeCreated,
+                //图片地址
+                poster: ''
+            });
+
+    function onJavaScriptBridgeCreated(status) {
+//      if(status != 'timeupdate' && status != 'onAccess'){
+//          $('#test1').append(status+'==>')
+//      }
+    }
+</script>
+</body>
+</html>
